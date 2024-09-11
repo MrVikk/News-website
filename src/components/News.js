@@ -14,7 +14,7 @@ const News = props => {
     return string.charAt(0).toUpperCase() + string.slice(1)
   }
 
-  const newsApiKey = process.env.REACT_APP_NEWS_API;
+  // const newsApiKey = process.env.REACT_APP_NEWS_API;
 
   const updateNews = async () => {
     props.setProgress(10)
