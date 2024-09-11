@@ -18,7 +18,7 @@ const News = props => {
 
   const updateNews = async () => {
     props.setProgress(10)
-    const url = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${newsApiKey}&page=${page}`
+    const url = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=ea9e473f17db4d7b89032544b6e5e129&page=${page}`
 
     //`https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}=${page}&pageSize=${props.pageSize}`;
 
@@ -43,7 +43,7 @@ const News = props => {
   const fetchMoreData = async () => {
     const url = `https://newsapi.org/v2/top-headlines?country=in&category=${
       props.category
-    }&apiKey=${newsApiKey}&page=${page + 1}`
+    }&apiKey=ea9e473f17db4d7b89032544b6e5e129&page=${page + 1}`
     //`https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apikey}&page=${page+1}&pageSize=${props.pageSize}`;
     setPage(page + 1)
     let data = await fetch(url)
